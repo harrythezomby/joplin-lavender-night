@@ -1,0 +1,164 @@
+/* userstyle.css */
+
+/* General Settings */
+:root {
+  --background-color: #1a1b26;
+  --foreground-color: #c0caf5;
+  --border-color: #1a1b26;
+  --hover-color: #2f3549;
+  --highlight-color: #bb9af7;
+  --selection-color: #3b4261;
+  --red: #f7768e;
+  --orange: #ff9e64;
+  --yellow: #e0af68;
+  --green: #9ece6a;
+  --light-green: #73daca;
+  --cyan: #7dcfff;
+  --blue: #7aa2f7;
+  --purple: #bb9af7;
+  --light-blue: #b4f9f8;
+  --pink: #ff9e64;
+  --white: #c0caf5;
+  --lavender: #a6a6ff !important;
+}
+
+/* Markdown Preview Background */
+body {
+  background-color: var(--background-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+h1 {
+  color: var(--blue) !important;
+  /* border-bottom: 1px solid var(--foreground-color) !important; */
+}
+
+h2 {
+  color: var(--cyan) !important;
+  /* border-bottom: 1px dotted var(--foreground-color) !important; */
+}
+
+h3 {
+  color: var(--purple) !important;/* used to be green */
+}
+
+h4 {
+  color: var(--yellow) !important;
+}
+
+h5 {
+  color: var(--orange) !important;
+}
+
+h6 {
+  color: var(--red) !important;
+}
+
+blockquote {
+  color: var(--purple) !important;
+  font-style: italic !important;
+}
+
+strong {
+  color: var(--red) !important;
+}
+
+em {
+  color: var(--orange) !important;
+  font-style: italic !important;
+}
+
+a {
+  color: var(--cyan) !important;
+  text-decoration: underline !important;
+}
+
+del {
+  color: var(--red) !important;
+  text-decoration: line-through !important;
+}
+
+/* Lists */
+ul,
+ol {
+  color: var(--white) !important; /* Un-tabbed list */
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  color: var(--lavender) !important;
+  /* used to be green */
+}
+
+ul ul ul,
+ol ul ul,
+ul ol ul,
+ol ol ul {
+  color: var(--cyan) !important;
+}
+
+ul ul ul ul,
+ol ul ul ul,
+ul ol ul ul,
+ol ol ul ul {
+  color: var(--pink) !important;
+}
+
+ul ul ul ul ul,
+ol ul ul ul ul,
+ul ol ul ul ul,
+ol ol ul ul ul {
+  color: var(--lavender) !important;
+}
+
+ul ul ul ul ul ul,
+ol ul ul ul ul ul,
+ul ol ul ul ul ul,
+ol ol ul ul ul ul {
+  color: var(--yellow) !important;
+}
+
+/* Numbered Lists */
+ol {
+  color: var(--white) !important; /* Un-tabbed numbered list */
+}
+
+ol ol {
+  color: var(--purple) !important;
+  /* used to be green */
+}
+
+ol ol ol {
+  color: var(--cyan) !important;
+}
+
+ol ol ol ol {
+  color: var(--pink) !important;
+}
+
+ol ol ol ol ol {
+  color: var(--purple) !important;
+}
+
+ol ol ol ol ol ol {
+  color: var(--yellow) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-color) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-color) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color) !important;
+}

@@ -1,0 +1,412 @@
+/* userchrome.css */
+
+/* General Settings */
+:root {
+  --background-color: #1a1b26 !important;
+  --foreground-color: #c0caf5;
+  --accent-color: #7aa2f7;
+  --border-color: #1a1b26;
+  --hover-color: #2f3549;
+  --active-color: #33467c;
+  --header-background-color: #24283b !important;
+  --header-foreground-color: #c0caf5;
+  --highlight-color: #bb9af7;
+  --selection-color: #3b4261;
+  --red: #f7768e;
+  --orange: #ff9e64;
+  --yellow: #e0af68;
+  --green: #9ece6a;
+  --light-green: #73daca;
+  --cyan: #7dcfff;
+  --blue: #7aa2f7;
+  --purple: #bb9af7;
+  --light-blue: #b4f9f8;
+  --pink: #ff9e64;
+  --white: #c0caf5;
+  --selected-notebook-color: #6e6eff3d !important;
+  --joplin-selected-color: #6e6eff3d !important;
+  --highlighted-color: #6e6eff18 !important;
+  --button-color: #ffffff;
+  --joplin-divider-color: #8b3a3a00 !important;
+  --transparent: #ffffff00 !important;
+  --lavender: #a6a6ff !important;
+}
+
+/* Application Background */
+body {
+  background-color: var(--background-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+/* Header */
+header {
+  background-color: var(--header-background-color) !important;
+  color: var(--header-foreground-color) !important;
+}
+
+header .header-bar {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+header .header-bar .header-bar-item {
+  color: var(--header-foreground-color) !important;
+}
+
+header .header-bar .header-bar-item:hover {
+  background-color: var(--hover-color) !important;
+}
+
+/* Sidebar */
+div.sidebar {
+  background-color: var(--background-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+div.sidebar .list-item {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+div.sidebar .list-item:hover {
+  background-color: var(--hover-color) !important;
+}
+
+div.sidebar .list-item.active {
+  background-color: var(--selection-color) !important;
+  color: var(--header-foreground-color) !important;
+}
+
+div.sidebar .list-item .list-item-title {
+  color: var(--accent-color) !important;
+}
+
+/* Note List */
+div.note-list {
+  background-color: var(--background-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+div.note-list .note-list-item {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+div.note-list .note-list-item:hover {
+  background-color: var(--hover-color) !important;
+}
+
+div.note-list .note-list-item.active {
+  background-color: var(--selection-color) !important;
+  color: var(--header-foreground-color) !important;
+}
+
+div.note-list .scrollable-container {
+  overflow-y: auto !important;
+  overflow-x: hidden !important; /* Fix double scrollbars */
+}
+
+/* Note List Overflow */
+.note-list>.notes {
+  overflow-x: initial !important;
+}
+
+/* Note Editor */
+div.editor {
+  background-color: var(--background-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+/* CodeMirror Styles (Markdown Editor) */
+.CodeMirror {
+  background-color: var(--background-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+.CodeMirror-line::selection,
+.CodeMirror-line > span::selection,
+.CodeMirror-line > span > span::selection {
+  background: var(--selection-color) !important;
+}
+
+.CodeMirror-gutter,
+.CodeMirror-gutters {
+  background-color: var(--background-color) !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid var(--accent-color) !important;
+}
+
+.CodeMirror-selected {
+  background-color: var(--selection-color) !important;
+}
+
+.CodeMirror-scroll {
+  background-color: var(--background-color);
+}
+
+.CodeMirror-sizer {
+  background-color: var(--background-color);
+}
+
+/* CodeMirror Syntax Highlighting */
+div.CodeMirror span.cm-header-1 {
+  color: var(--blue) !important;
+  font-size: 2em !important;
+  /* border-bottom: 1px solid var(--foreground-color) !important; */
+}
+
+div.CodeMirror span.cm-header-2 {
+  color: var(--cyan) !important;
+  font-size: 1.75em !important;
+  /* border-bottom: 1px dotted var(--foreground-color) !important; */
+}
+
+div.CodeMirror span.cm-header-3 {
+  color: var(--purple) !important;
+  font-size: 1.5em !important;
+}
+
+div.CodeMirror span.cm-header-4 {
+  color: var(--yellow) !important;
+  font-size: 1.25em !important;
+}
+
+div.CodeMirror span.cm-header-5 {
+  color: var(--orange) !important;
+  font-size: 1em !important;
+}
+
+div.CodeMirror span.cm-header-6 {
+  color: var(--red) !important;
+  font-size: 0.875em !important;
+}
+
+.cm-quote {
+  color: var(--purple) !important;
+  font-style: italic !important;
+}
+
+.cm-strong {
+  color: var(--red) !important;
+}
+
+.cm-em {
+  color: var(--orange) !important;
+  font-style: italic !important;
+}
+
+.cm-link {
+  color: var(--cyan) !important;
+  text-decoration: underline !important;
+}
+
+.cm-strikethrough {
+  color: var(--red) !important;
+  text-decoration: line-through !important;
+}
+
+/* Lists */
+.cm-variable-2 {
+  color: var(--white) !important; /* Un-tabbed list */
+}
+
+.cm-variable-3.cm-tabbed-list-1 {
+  color: var(--green) !important;
+}
+
+.cm-variable-3.cm-tabbed-list-2 {
+  color: var(--cyan) !important;
+}
+
+.cm-variable-3.cm-tabbed-list-3 {
+  color: var(--pink) !important;
+}
+
+.cm-variable-3.cm-tabbed-list-4 {
+  color: var(--purple) !important;
+}
+
+.cm-variable-3.cm-tabbed-list-5 {
+  color: var(--yellow) !important;
+}
+
+/* Numbered Lists */
+.cm-number {
+  color: var(--white) !important; /* Un-tabbed numbered list */
+}
+
+.cm-number.cm-tabbed-list-1 {
+  color: var(--green) !important;
+}
+
+.cm-number.cm-tabbed-list-2 {
+  color: var(--cyan) !important;
+}
+
+.cm-number.cm-tabbed-list-3 {
+  color: var(--pink) !important;
+}
+
+.cm-number.cm-tabbed-list-4 {
+  color: var(--purple) !important;
+}
+
+.cm-number.cm-tabbed-list-5 {
+  color: var(--yellow) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-color) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-color) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color) !important;
+}
+
+/* Buttons */
+button {
+  background-color: #1a1b26 !important;
+  color: var(--foreground-color) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 4px !important;
+  padding: 8px 12px !important;
+  font-size: 15px !important;
+}
+
+button:hover {
+  background-color: var(--hover-color) !important;
+}
+
+button:active {
+  background-color: var(--active-color) !important;
+}
+
+.note-list>.emptylist,
+.dtFiFQ,
+.sc-aXZVg,
+.rGEbE,
+.sc-fqkvVR,
+.dEZmvG,
+.gRlcnJ,
+.iTdchv,
+.editor-toolbar .button, .header .button,
+.jeUOIH,
+.fkcYHc,
+.fRueuA {
+  background-color: var(--transparent) !important;
+  color: var(--lavender) !important;
+}
+
+/* Search box */
+.hzUGcv {
+  border: 0px !important;
+
+}
+
+/* Modals */
+div.modal {
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+div.modal-header {
+  background-color: var(--header-background-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--header-foreground-color) !important;
+}
+
+div.modal-footer {
+  border-top: 1px solid var(--border-color) !important;
+}
+
+/* Note and Todo Creator */
+div#note-editor-container,
+div#todo-editor-container {
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+/* Note Headings */
+.note-title {
+  background-color: var(--header-background-color) !important;
+  color: var(--header-foreground-color) !important;
+}
+
+/* Tool Buttons */
+div.editor-toolbar button {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  border: none !important;
+}
+
+div.editor-toolbar button:hover {
+  background-color: var(--hover-color);
+}
+
+div.editor-toolbar button:active {
+  background-color: var(--active-color);
+}
+
+/* Additional UI Elements */
+div.tag-bar,
+div.CodeMirror-sizer,
+div.editor-toolbar,
+.uFVwC,
+.dPazIY,
+.input.title-input {
+  background-color: var(--background-color) !important;
+  color: var(--lavender) !important;
+}
+
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div:nth-child(2) {
+  background-color: var(--background-color);
+}
+
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-noteList > div:nth-child(2) > div {
+  background-color: var(--background-color);
+}
+
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-sideBar > div:nth-child(2) > div {
+  background-color: var(--background-color);
+}
+
+/* Notebook Selection Highlight */
+.cqlwYH,
+.eibLdd,
+.izrMvb,
+.edjcDi,
+.gXcbDC {
+  background-color: var(--selected-notebook-color) !important;
+}
+
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor {
+  background-color: var(--background-color) !important;
+}
+
+.iCezTc,
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div.sc-gFqAkR.uFVwC > input {
+  background-color: var(--background-color) !important;
+}
+
+.dIykJs:hover,
+.fdNGI:hover,
+.ecmWRF:hover,
+.kJAKXD:hover,
+.iTsWTZ:hover {
+  background-color: var(--highlighted-color) !important;
+}
+
+div.sidebar .list-item:hover {
+  background-color: #ffffff00 !important;
+}
