@@ -3,33 +3,39 @@
 /* General Settings */
 :root {
   --background-color: #1a1b26 !important;
-  --foreground-color: #c0caf5;
-  --accent-color: #7aa2f7;
-  --border-color: #1a1b26;
-  --hover-color: #2f3549;
-  --active-color: #33467c;
+  --foreground-color: #c0caf5 !important;
+  --accent-color: #7aa2f7 !important;
+  --border-color: #1a1b26 !important;
+  --hover-color: #1e2037 !important;
+  --active-color: #33467c !important;
   --header-background-color: #24283b !important;
   --header-foreground-color: #c0caf5;
-  --highlight-color: #bb9af7;
-  --selection-color: #3b4261;
-  --red: #f7768e;
-  --orange: #ff9e64;
-  --yellow: #e0af68;
-  --green: #9ece6a;
-  --light-green: #73daca;
-  --cyan: #7dcfff;
-  --blue: #7aa2f7;
-  --purple: #bb9af7;
-  --light-blue: #b4f9f8;
-  --pink: #ff9e64;
-  --white: #c0caf5;
-  --selected-notebook-color: #6e6eff3d !important;
+  --highlight-color: #bb9af7 !important;
+  --selection-color: #3b4261 !important;
+  --red: #f7768e !important;
+  --orange: #ff9e64 !important;
+  --yellow: #e0af68 !important;
+  --green: #9ece6a !important;
+  --light-green: #73daca !important;
+  --cyan: #7dcfff !important;
+  --cyanhover: #8bd1f7 !important;
+  --blue: #7aa2f7 !important;
+  --bluehover: #8b9ff7 !important;
+  --purple: #bb9af7 !important;
+  --purplehover: #c2a9f7 !important;
+  --pink: #c792ea !important;
+  --pinkhover: #cea0ed !important;
+  --light-blue: #b4f9f8 !important;
+  --white: #c0caf5 !important;
+/*   --selected-notebook-color: #6e6eff3d !important;*/
+  --selected-notebook-color: #a1ffb7 !important;
   --joplin-selected-color: #6e6eff3d !important;
   --highlighted-color: #6e6eff18 !important;
-  --button-color: #ffffff;
+  --button-color: #ffffff !important;
   --joplin-divider-color: #8b3a3a00 !important;
   --transparent: #ffffff00 !important;
   --lavender: #a6a6ff !important;
+  --joplin-url-color: #1e52b6 !important;
 }
 
 /* Application Background */
@@ -141,11 +147,11 @@ div.editor {
 }
 
 .CodeMirror-scroll {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 .CodeMirror-sizer {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 /* CodeMirror Syntax Highlighting */
@@ -205,30 +211,38 @@ div.CodeMirror span.cm-header-6 {
   text-decoration: line-through !important;
 }
 
-/* Lists */
+/* Lists - Not working? */
 .cm-variable-2 {
   color: var(--white) !important; /* Un-tabbed list */
+  /* This used to be white, but I have changed it to lavender, nvm changed it back to white */
 }
 
-.cm-variable-3.cm-tabbed-list-1 {
-  color: var(--green) !important;
+ .cm-variable-3 {
+  color: var(--blue) !important;
 }
 
-.cm-variable-3.cm-tabbed-list-2 {
+.cm-variable-4 {
   color: var(--cyan) !important;
 }
 
-.cm-variable-3.cm-tabbed-list-3 {
-  color: var(--pink) !important;
-}
-
-.cm-variable-3.cm-tabbed-list-4 {
+.cm-variable-5 {
   color: var(--purple) !important;
 }
 
-.cm-variable-3.cm-tabbed-list-5 {
-  color: var(--yellow) !important;
+.cm-variable-6 {
+  color: var(--pink) !important;
 }
+
+.cm-variable-7 {
+  color: var(--green) !important;
+} 
+
+/* To get the pink bit for third tabbing */
+.cm-keyword {
+  color: var(--pink) !important;
+}
+
+
 
 /* Numbered Lists */
 .cm-number {
@@ -273,13 +287,14 @@ div.CodeMirror span.cm-header-6 {
 }
 
 /* Buttons */
+.eJDboZ,
 button {
   background-color: #1a1b26 !important;
   color: var(--foreground-color) !important;
   border: 1px solid var(--border-color) !important;
-  border-radius: 4px !important;
-  padding: 8px 12px !important;
-  font-size: 15px !important;
+  border-radius: 15px !important;
+  /* padding: 8px 12px !important; */
+  /* font-size: 15px !important; */
 }
 
 button:hover {
@@ -360,34 +375,40 @@ div.editor-toolbar button:active {
 
 /* Additional UI Elements */
 div.tag-bar,
-div.CodeMirror-sizer,
 div.editor-toolbar,
 .uFVwC,
 .dPazIY,
+.bkWilx,
 .input.title-input {
   background-color: var(--background-color) !important;
   color: var(--lavender) !important;
 }
 
+/* Default CM paragraph */
+div.CodeMirror-sizer {
+  background-color: var(--background-color) !important;
+  color: var(--white) !important;
+}
+
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div:nth-child(2) {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-noteList > div:nth-child(2) > div {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-sideBar > div:nth-child(2) > div {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
-/* Notebook Selection Highlight */
+/* Notebook Selection Highlight - deprecated for color coded depth */
 .cqlwYH,
 .eibLdd,
 .izrMvb,
 .edjcDi,
 .gXcbDC {
-  background-color: var(--selected-notebook-color) !important;
+  background-color: transparent !important;
 }
 
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor {
@@ -399,7 +420,6 @@ div.editor-toolbar,
   background-color: var(--background-color) !important;
 }
 
-.dIykJs:hover,
 .fdNGI:hover,
 .ecmWRF:hover,
 .kJAKXD:hover,
@@ -410,3 +430,100 @@ div.editor-toolbar,
 div.sidebar .list-item:hover {
   background-color: #ffffff00 !important;
 }
+
+/* Notebook Titles */
+.hrpskW {
+  color: var(--background-color) !important;
+}
+
+/* Selected Notebook Text */
+.eroWlt {
+  color: var(--background-color) !important;
+}
+
+/* Note Titles in sidebar */
+.note-list-item
+> .content
+> .title {
+  color: var(--lavender) !important;
+}
+
+/* Note title input */
+.title-input {
+  color: var(--lavender) !important;
+}
+
+
+
+/* Rich editor top bar transparent */
+.joplin-tinymce .tox .tox-toolbar__primary,
+.joplin-tinymce .tox-toolbar__group,
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(1),
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(2),
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div.tox.tox-tinymce > div.tox-editor-container > div.tox-editor-header > div.tox-toolbar-overlord > div {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+/* Notebook sidebar color code with depth */
+/* Depth 1 */
+.fdNGI {
+  background: var(--blue) !important;
+}
+
+.fdNGI:hover {
+  background: var(--bluehover) !important;
+}
+
+/* Depth 2 */
+.ecmWRF {
+  background: var(--cyan) !important;
+}
+
+.ecmWRF:hover {
+  background: var(--cyanhover) !important;
+}
+
+/* Depth 3 */
+.kJAKXD {
+  background: var(--pink) !important; 
+}
+
+.kJAKXD:hover {
+  background: var(--pinkhover) !important;
+}
+
+/* All Notes */
+.dIykJs {
+  background: var(--purple) !important;
+}
+
+.dIykJs:hover {
+  background: var(--purplehover) !important;
+}
+
+.ljBnjS {
+  color: var(--background-color) !important;
+}
+
+.dtwrWP {
+  color: var(--background-color) !important;
+}
+
+/* Sidebar Expand Link */
+.sidebar-expand-link {
+  color: var(--background-color) !important;
+}
+
+/* Selected notebooks */
+.edjcDi,
+.izrMvb,
+.eibLdd,
+.gXcbDC {
+  background: var(--light-green) !important;
+}
+
+
+
+
+

@@ -17,7 +17,7 @@
   --blue: #7aa2f7;
   --purple: #bb9af7;
   --light-blue: #b4f9f8;
-  --pink: #ff9e64;
+  --pink: #c792ea !important;
   --white: #c0caf5;
   --lavender: #a6a6ff !important;
 }
@@ -64,7 +64,7 @@ strong {
 }
 
 em {
-  color: var(--orange) !important;
+  color: var(--pink) !important;
   font-style: italic !important;
 }
 
@@ -81,7 +81,7 @@ del {
 /* Lists */
 ul,
 ol {
-  color: var(--white) !important; /* Un-tabbed list */
+  color: var(--lavender) !important; /* Un-tabbed list */
 }
 
 ul ul,
@@ -122,7 +122,7 @@ ol ol ul ul ul ul {
 
 /* Numbered Lists */
 ol {
-  color: var(--white) !important; /* Un-tabbed numbered list */
+  color: var(--lavender) !important; /* Un-tabbed numbered list */
 }
 
 ol ol {
@@ -161,4 +161,9 @@ ol ol ol ol ol ol {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--hover-color) !important;
+}
+
+/* Default paragraphs are white */
+.cm-s-default .CodeMirror-lines div {
+  color: var(--white) !important;
 }
