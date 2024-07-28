@@ -433,12 +433,12 @@ div.sidebar .list-item:hover {
 
 /* Notebook Titles */
 .hrpskW {
-  color: var(--background-color) !important;
+  color: var(--lavender) !important;
 }
 
 /* Selected Notebook Text */
 .eroWlt {
-  color: var(--background-color) !important;
+  color: var(--lavender) !important;
 }
 
 /* Note Titles in sidebar */
@@ -465,54 +465,44 @@ div.sidebar .list-item:hover {
   background: transparent !important;
 }
 
+
+/* 
 /* Notebook sidebar color code with depth */
 /* Depth 1 */
-.fdNGI {
-  background: var(--blue) !important;
-}
 
 .fdNGI:hover {
-  background: var(--bluehover) !important;
+  background: var(--hover-color) !important;
 }
 
 /* Depth 2 */
-.ecmWRF {
-  background: var(--cyan) !important;
-}
 
 .ecmWRF:hover {
-  background: var(--cyanhover) !important;
+  background: var(--hover-color) !important;
 }
 
 /* Depth 3 */
-.kJAKXD {
-  background: var(--pink) !important; 
-}
 
 .kJAKXD:hover {
-  background: var(--pinkhover) !important;
+  background: var(--hover-color) !important;
 }
 
 /* All Notes */
-.dIykJs {
-  background: var(--purple) !important;
-}
 
 .dIykJs:hover {
-  background: var(--purplehover) !important;
+  background: var(--hover-color) !important;
 }
 
 .ljBnjS {
-  color: var(--background-color) !important;
+  color: var(--lavender) !important;
 }
 
 .dtwrWP {
-  color: var(--background-color) !important;
+  color: var(--lavender) !important;
 }
 
 /* Sidebar Expand Link */
 .sidebar-expand-link {
-  color: var(--background-color) !important;
+  color: var(--white) !important;
 }
 
 /* Selected notebooks */
@@ -520,8 +510,17 @@ div.sidebar .list-item:hover {
 .izrMvb,
 .eibLdd,
 .gXcbDC {
-  background: var(--light-green) !important;
+  background: var(--joplin-selected-color) !important;
+} 
+
+/* Middle separator */
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) {
+  position: relative;
+  display: flex;
+  flex: 1 1 0%;
+  border-left: 1px solid #242635;
 }
+
 
 
 

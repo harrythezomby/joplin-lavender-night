@@ -30,7 +30,7 @@ body {
 
 h1 {
   color: var(--blue) !important;
-  /* border-bottom: 1px solid var(--foreground-color) !important; */
+  border-bottom: 1px solid var(--lavender) !important;
 }
 
 h2 {
@@ -79,10 +79,11 @@ del {
 }
 
 /* Lists */
-ul,
+/* Un-tabbed list */
+/* ul,
 ol {
-  color: var(--lavender) !important; /* Un-tabbed list */
-}
+  color: var(--lavender) !important; 
+} */
 
 ul ul,
 ol ul,
@@ -166,4 +167,36 @@ ol ol ol ol ol ol {
 /* Default paragraphs are white */
 .cm-s-default .CodeMirror-lines div {
   color: var(--white) !important;
+}
+
+/* Tables */
+.jop-tinymce table td, table td {
+  border: 1px solid rgb(166,166,255);
+}
+
+.jop-tinymce table, table {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid rgb(70, 70, 70);
+  background-color: var(--background-color);
+}
+
+.jop-tinymce table tr:nth-child(even), table tr:nth-child(even) {
+  background-color: #20212e;
+}
+
+.jop-tinymce table tr:hover, table tr:hover {
+  background-color: var(--hover-color);
+}
+
+.jop-tinymce table th, table th {
+  border-bottom: var(--lavender);
+  background-color: #20212e;
+}
+
+.jop-tinymce table, table {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid rgb(166,166,255);
+  background-color: var(--background-color);
 }
