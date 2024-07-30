@@ -3,6 +3,9 @@
 /* General Settings */
 :root {
   --background-color: #1a1b26 !important;
+  --joplin-background-color: #1a1b26 !important;
+  --joplin-code-background-color: #1a1b26 !important;
+  --joplin-color: #a6a6ff !important;
   --foreground-color: #c0caf5 !important;
   --accent-color: #7aa2f7 !important;
   --border-color: #1a1b26 !important;
@@ -18,16 +21,11 @@
   --green: #9ece6a !important;
   --light-green: #73daca !important;
   --cyan: #7dcfff !important;
-  --cyanhover: #8bd1f7 !important;
   --blue: #7aa2f7 !important;
-  --bluehover: #8b9ff7 !important;
   --purple: #bb9af7 !important;
-  --purplehover: #c2a9f7 !important;
   --pink: #c792ea !important;
-  --pinkhover: #cea0ed !important;
   --light-blue: #b4f9f8 !important;
   --white: #c0caf5 !important;
-/*   --selected-notebook-color: #6e6eff3d !important;*/
   --selected-notebook-color: #a1ffb7 !important;
   --joplin-selected-color: #6e6eff3d !important;
   --highlighted-color: #6e6eff18 !important;
@@ -35,7 +33,8 @@
   --joplin-divider-color: #8b3a3a00 !important;
   --transparent: #ffffff00 !important;
   --lavender: #a6a6ff !important;
-  --joplin-url-color: #1e52b6 !important;
+  --joplin-url-color: var(--cyan) !important;
+  --joplin-background-color-hover3: var(--hover-color) !important;
 }
 
 /* Application Background */
@@ -88,7 +87,7 @@ div.sidebar .list-item .list-item-title {
 /* Note List */
 div.note-list {
   background-color: var(--background-color) !important;
-  color: var(--foreground-color) !important;
+  color: var(--lavender) !important;
 }
 
 div.note-list .note-list-item {
@@ -197,7 +196,7 @@ div.CodeMirror span.cm-header-6 {
 }
 
 .cm-em {
-  color: var(--orange) !important;
+  color: var(--purple) !important;
   font-style: italic !important;
 }
 
@@ -518,11 +517,38 @@ div.sidebar .list-item:hover {
   position: relative;
   display: flex;
   flex: 1 1 0%;
-  border-left: 1px solid #242635;
+  border-left: 1px solid #242635 !important;
 }
 
+/* Code block background */
+.CodeMirror pre.CodeMirror-line-like {
+  padding-left: 0;
+  background: var(--background-color) !important;
+}
 
+/* Detailed note view */
+.note-list-item
+> .row.-shared {
+    color: var(--joplin-color-warn3) !important;
+}
 
+/* Detailed note view titles */
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-noteList > div.sc-cwHptR.DnUmE > div > div.note-list-header {
+  height: 26px;
+  background-color: var(--background-color) !important;
+}
 
+.note-list-header>.item {
+  color: var(--lavender) !important;
+}
 
+/* No note selected bg */
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div {
+  background-color: transparent !important;
+}
+
+#root {
+  background-color: var(--background-color) !important;
+  color: var(--lavender) !important;
+}
 

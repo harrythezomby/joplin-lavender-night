@@ -80,10 +80,10 @@ del {
 
 /* Lists */
 /* Un-tabbed list */
-/* ul,
+ul,
 ol {
-  color: var(--lavender) !important; 
-} */
+  color: #dddddd !important; 
+}
 
 ul ul,
 ol ul,
@@ -199,4 +199,9 @@ ol ol ol ol ol ol {
   border-collapse: collapse;
   border: 1px solid rgb(166,166,255);
   background-color: var(--background-color);
+}
+
+/* Code block bg */
+.hljs {
+  background: var(--background-color);
 }
