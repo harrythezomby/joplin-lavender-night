@@ -20,12 +20,46 @@
   --pink: #c792ea !important;
   --white: #c0caf5;
   --lavender: #a6a6ff !important;
+  --white: #c0caf5 !important;
+  --background-color: #1a1b26 !important;
+  --joplin-background-color: #1a1b26 !important;
+  --joplin-code-background-color: #1a1b26 !important;
+  --joplin-color: #a6a6ff !important;
+  --foreground-color: #c0caf5 !important;
+  --accent-color: #7aa2f7 !important;
+  --border-color: #1a1b26 !important;
+  --hover-color: #1e2037 !important;
+  --active-color: #33467c !important;
+  --header-background-color: #24283b !important;
+  --header-foreground-color: #c0caf5;
+  --highlight-color: #bb9af7 !important;
+  --selection-color: #3b4261 !important;
+  --red: #f7768e !important;
+  --orange: #ff9e64 !important;
+  --yellow: #e0af68 !important;
+  --green: #9ece6a !important;
+  --light-green: #73daca !important;
+  --cyan: #7dcfff !important;
+  --blue: #7aa2f7 !important;
+  --purple: #bb9af7 !important;
+  --pink: #c792ea !important;
+  --light-blue: #b4f9f8 !important;
+  --white: #c0caf5 !important;
+  --selected-notebook-color: #a1ffb7 !important;
+  --joplin-selected-color: #6e6eff3d !important;
+  --highlighted-color: #6e6eff18 !important;
+  --button-color: #ffffff !important;
+  --joplin-divider-color: #8b3a3a00 !important;
+  --transparent: #ffffff00 !important;
+  --lavender: #a6a6ff !important;
+  --joplin-url-color: var(--cyan) !important;
+  --joplin-background-color-hover3: var(--hover-color) !important;
 }
 
 /* Markdown Preview Background */
 body {
   background-color: var(--background-color) !important;
-  color: var(--foreground-color) !important;
+  color: var(--white) !important;
 }
 
 h1 {
@@ -59,9 +93,9 @@ blockquote {
   font-style: italic !important;
 }
 
-strong {
+/*strong {
   color: var(--red) !important;
-}
+}*/
 
 em {
   color: var(--pink) !important;
@@ -82,14 +116,14 @@ del {
 /* Un-tabbed list */
 ul,
 ol {
-  color: #dddddd !important; 
+  color: var(--white) !important; 
 }
 
 ul ul,
 ol ul,
 ul ol,
 ol ol {
-  color: var(--lavender) !important;
+  color: var(--blue) !important;
   /* used to be green */
 }
 
@@ -97,7 +131,7 @@ ul ul ul,
 ol ul ul,
 ul ol ul,
 ol ol ul {
-  color: var(--cyan) !important;
+  color: var(--pink) !important;
 }
 
 ul ul ul ul,
@@ -121,18 +155,19 @@ ol ol ul ul ul ul {
   color: var(--yellow) !important;
 }
 
-/* Numbered Lists */
+/* Numbered Lists 
 ol {
   color: var(--lavender) !important; /* Un-tabbed numbered list */
 }
+*/
 
 ol ol {
-  color: var(--purple) !important;
+  color: var(--blue) !important;
   /* used to be green */
 }
 
 ol ol ol {
-  color: var(--cyan) !important;
+  color: var(--pink) !important;
 }
 
 ol ol ol ol {
@@ -140,7 +175,7 @@ ol ol ol ol {
 }
 
 ol ol ol ol ol {
-  color: var(--purple) !important;
+  color: var(--blue) !important;
 }
 
 ol ol ol ol ol ol {

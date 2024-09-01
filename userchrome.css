@@ -457,15 +457,16 @@ div.sidebar .list-item:hover {
 /* Rich editor top bar transparent */
 .joplin-tinymce .tox .tox-toolbar__primary,
 .joplin-tinymce .tox-toolbar__group,
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div:nth-child(2) > div > div:nth-child(1),
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div:nth-child(2) > div > div:nth-child(2),
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(1),
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(2),
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div.tox.tox-tinymce > div.tox-editor-container > div.tox-editor-header > div.tox-toolbar-overlord > div {
-  background-color: transparent !important;
-  background: transparent !important;
+  background-color: var(--background-color) !important;
+  /*background: transparent !important;*/
 }
 
-
-/* 
+/*
 /* Notebook sidebar color code with depth */
 /* Depth 1 */
 
@@ -551,4 +552,15 @@ div.sidebar .list-item:hover {
   background-color: var(--background-color) !important;
   color: var(--lavender) !important;
 }
+
+/* Rich editor toolbar icon colour */
+.tox .tox-tbtn, .tox .tox-tbtn svg, .tox .tox-menu button > svg, .tox .tox-split-button, .tox .tox-dialog__header, .tox .tox-button--icon .tox-icon svg, .tox .tox-button.tox-button--icon .tox-icon svg, .tox textarea, .tox input, .tox .tox-label, .tox .tox-toolbar-label {
+  color: var(--lavender) !important;
+  fill: var(--lavender) !important;
+}
+
+.joplin-tinymce .tox .tox-toolbar__primary {
+  background-color: var(--background-color) !important;
+}
+
 
