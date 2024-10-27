@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-  color: var(--purple) !important;/* used to be green */
+  color: var(--purple) !important; /* used to be green */
 }
 
 h4 {
@@ -60,7 +60,7 @@ blockquote {
 }
 
 strong {
-  color: var(--red) !important;
+  color: var(--white) !important;
 }
 
 em {
@@ -79,73 +79,106 @@ del {
 }
 
 /* Lists */
-/* Un-tabbed list */
+/* Un-tabbed list - Level 0 */
 ul,
 ol {
-  color: #dddddd !important; 
+  color: var(--white) !important; /* White color for un-tabbed lists */
 }
 
+/* First level of nesting - Level 1 */
 ul ul,
 ol ul,
 ul ol,
 ol ol {
-  color: var(--lavender) !important;
-  /* used to be green */
+  color: var(--blue) !important; /* Blue color for one tab (first level of nesting) */
 }
 
+/* Second level of nesting - Level 2 */
 ul ul ul,
 ol ul ul,
 ul ol ul,
 ol ol ul {
-  color: var(--cyan) !important;
+  color: var(--pink) !important; /* Pink color for two tabs (second level of nesting) */
 }
 
+/* Third level of nesting - Level 3 */
 ul ul ul ul,
 ol ul ul ul,
 ul ol ul ul,
 ol ol ul ul {
-  color: var(--pink) !important;
+  color: var(--white) !important; /* Back to White for three tabs (third level of nesting) */
 }
 
+/* Fourth level of nesting - Level 4 */
 ul ul ul ul ul,
 ol ul ul ul ul,
 ul ol ul ul ul,
 ol ol ul ul ul {
-  color: var(--lavender) !important;
+  color: var(--blue) !important; /* Blue color for four tabs (fourth level of nesting) */
 }
 
+/* Fifth level of nesting - Level 5 */
 ul ul ul ul ul ul,
 ol ul ul ul ul ul,
 ul ol ul ul ul ul,
 ol ol ul ul ul ul {
-  color: var(--yellow) !important;
+  color: var(--pink) !important; /* Pink color for five tabs (fifth level of nesting) */
+}
+
+/* Sixth level of nesting - Level 6 */
+ul ul ul ul ul ul ul,
+ol ul ul ul ul ul ul,
+ul ol ul ul ul ul ul,
+ol ol ul ul ul ul ul {
+  color: var(--white) !important; /* Back to White for six tabs (sixth level of nesting) */
+}
+
+/* Seventh level of nesting - Level 7 */
+ul ul ul ul ul ul ul ul,
+ol ul ul ul ul ul ul ul,
+ul ol ul ul ul ul ul ul,
+ol ol ul ul ul ul ul ul {
+  color: var(--blue) !important; /* Blue color for seven tabs (seventh level of nesting) */
 }
 
 /* Numbered Lists */
 ol {
-  color: var(--lavender) !important; /* Un-tabbed numbered list */
+  color: var(--white) !important; /* Un-tabbed numbered list */
 }
 
 ol ol {
-  color: var(--purple) !important;
-  /* used to be green */
+  color: var(--blue) !important; /* Blue color for one tab (first level of nesting) */
 }
 
 ol ol ol {
-  color: var(--cyan) !important;
+  color: var(--pink) !important; /* Pink color for two tabs (second level of nesting) */
 }
 
 ol ol ol ol {
-  color: var(--pink) !important;
+  color: var(--white) !important; /* Back to White for three tabs (third level of nesting) */
 }
 
 ol ol ol ol ol {
-  color: var(--purple) !important;
+  color: var(--blue) !important; /* Blue color for four tabs (fourth level of nesting) */
 }
 
 ol ol ol ol ol ol {
-  color: var(--yellow) !important;
+  color: var(--pink) !important; /* Pink color for five tabs (fifth level of nesting) */
 }
+
+ol ol ol ol ol ol ol {
+  color: var(--white) !important; /* Back to White for six tabs (sixth level of nesting) */
+}
+
+ol ol ol ol ol ol ol ol {
+  color: var(--blue) !important; /* Blue color for seven tabs (seventh level of nesting) */
+}
+
+
+
+
+
+
 
 /* Scrollbars */
 ::-webkit-scrollbar {

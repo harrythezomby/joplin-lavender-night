@@ -460,10 +460,40 @@ div.sidebar .list-item:hover {
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(1),
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(2),
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div.tox.tox-tinymce > div.tox-editor-container > div.tox-editor-header > div.tox-toolbar-overlord > div {
-  background-color: transparent !important;
-  background: transparent !important;
+  background-color: var(--background-color) !important;
+  background: var(--background-color) !important;
 }
 
+/* Rich text editor bar under background color */
+/* Center bit with main interaction buttons */
+.tox .tox-toolbar, .tox .tox-toolbar__overflow, .tox .tox-toolbar__primary, .tox-editor-header .tox-toolbar__primary, .tox .tox-toolbar-overlord, .tox.tox-tinymce-aux .tox-toolbar__overflow, .tox .tox-statusbar, .tox .tox-dialog__header, .tox .tox-dialog, .tox textarea, .tox input, .tox .tox-menu, .tox .tox-dialog__footer,
+
+/* Right bit where editor toggle is */
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div:nth-child(2) > div > div:nth-child(2),
+
+/* Left bit with back/forward buttons */
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div:nth-child(2) > div > div:nth-child(1)
+{
+  background-color: var(--background-color) !important;  
+}
+
+/* Rich text editor buttons */
+.plugin-icon.fa, .plugin-icon.far, .plugin-icon.fasvg, .plugin-icon.fasvg, .tox .tox-tbtn, .tox .tox-tbtn svg, .tox .tox-menu button > svg, .tox .tox-split-button, .tox .tox-dialog__header, .tox .tox-button--icon .tox-icon svg, .tox .tox-button.tox-button--icon .tox-icon svg, .tox textarea, .tox input, .tox .tox-label, .tox .tox-toolbar-label {
+  color: var(--lavender) !important;
+  fill: var(--lavender) !important;
+}
+
+.tox .tox-tbtn {
+  color: var(--lavender) !important;
+  fill: var(--lavender) !important;
+}
+
+/* Rich text editor toggle */
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div:nth-child(2) > div > div:nth-child(2) > button > div:nth-child(2),
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div:nth-child(2) > div > div:nth-child(1) > div > div:nth-child(3) > button > div:nth-child(1) {
+  background-color: var(--lavender) !important;
+  border-color: var(--lavender) !important;
+}
 
 /* 
 /* Notebook sidebar color code with depth */
