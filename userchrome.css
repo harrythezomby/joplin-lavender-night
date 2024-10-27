@@ -192,7 +192,7 @@ div.CodeMirror span.cm-header-6 {
 }
 
 .cm-strong {
-  color: var(--red) !important;
+  color: var(--white) !important;
 }
 
 .cm-em {
@@ -273,12 +273,13 @@ div.CodeMirror span.cm-header-6 {
   width: 5px !important;
 }
 
+/* Change this to --background-color for a cleaner/flatter look */
 ::-webkit-scrollbar-track {
   background-color: var(--background-color) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--border-color) !important;
+  background-color: #1f222f;
 }
 
 ::-webkit-scrollbar-thumb:hover {

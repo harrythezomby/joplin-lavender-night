@@ -30,7 +30,7 @@ body {
 
 h1 {
   color: var(--blue) !important;
-  border-bottom: 1px solid var(--lavender) !important;
+  border-bottom: 3px solid var(--lavender) !important;
 }
 
 h2 {
@@ -174,11 +174,11 @@ ol ol ol ol ol ol ol ol {
   color: var(--blue) !important; /* Blue color for seven tabs (seventh level of nesting) */
 }
 
-
-
-
-
-
+/* Markdown separator (---) */
+hr {
+  border: none;
+  border-bottom: 3px solid var(--lavender) !important;
+}
 
 /* Scrollbars */
 ::-webkit-scrollbar {
