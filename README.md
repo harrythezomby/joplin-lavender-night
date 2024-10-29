@@ -36,3 +36,5 @@ hr {
 ![image](https://github.com/user-attachments/assets/2261b38c-6360-4be9-a7d2-e06469c223f9)
 As you can see, the rich text editor needs quite a bit of work. Namely, the big grey box, as well as lavender filling for most of the styling buttons. I've tried battling with the css here quite a bit but just can't seem to get it, so if you have any ideas please lmk or feel free to make a pr!
 
+2. After 3.1.20:
+After the new Joplin update (3.1.20), I haven't gotten around to fixing the leftmost sidebar, so hover/selected colour is still the default blue. I also haven't gotten around to fixing icon colour. However, I did fix a little bit of the areas that turned grey, such as the little area behind the new note/to-do buttons.
