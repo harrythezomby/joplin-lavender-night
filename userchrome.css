@@ -3,6 +3,7 @@
 /* General Settings */
 :root {
   --background-color: #1a1b26 !important;
+  --joplin-background-color3: #1a1b26 !important;
   --joplin-background-color: #1a1b26 !important;
   --joplin-code-background-color: #1a1b26 !important;
   --joplin-color: #a6a6ff !important;
@@ -45,7 +46,7 @@ body {
 
 /* Header */
 header {
-  background-color: var(--header-background-color) !important;
+  background-color: var(--background-color) !important;
   color: var(--header-foreground-color) !important;
 }
 
@@ -335,7 +336,7 @@ div.modal {
 }
 
 div.modal-header {
-  background-color: var(--header-background-color) !important;
+  background-color: var(--background-color) !important;
   border-bottom: 1px solid var(--border-color) !important;
   color: var(--header-foreground-color) !important;
 }
@@ -352,11 +353,18 @@ div#todo-editor-container {
   color: var(--foreground-color) !important;
 }
 
-/* Note Headings */
-.note-title {
-  background-color: var(--header-background-color) !important;
+/* Note Headings - React root is new */
+.note-title,
+#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div.note-title-wrapper > input {
+  background-color: var(--background-color) !important;
   color: var(--header-foreground-color) !important;
 }
+
+/* New note/todo button area background */
+.jZViVd {
+  background-color: var(--background-color) !important;
+}
+
 
 /* Tool Buttons */
 div.editor-toolbar button {
@@ -457,12 +465,13 @@ div.sidebar .list-item:hover {
 
 /* Rich editor top bar transparent */
 .joplin-tinymce .tox .tox-toolbar__primary,
+.tox .tox-toolbar__primary, .tox .tox-toolbar__overflow,  .tox .tox-toolbar__group, .tox .tox-toolbar__group,
 .joplin-tinymce .tox-toolbar__group,
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(1),
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(2),
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div.tox.tox-tinymce > div.tox-editor-container > div.tox-editor-header > div.tox-toolbar-overlord > div {
   background-color: var(--background-color) !important;
-  background: var(--background-color) !important;
+/*   background: var(--background-color) !important; */
 }
 
 /* Rich text editor bar under background color */
