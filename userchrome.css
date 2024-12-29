@@ -323,9 +323,13 @@ button:active {
 }
 
 /* Search box */
-.hzUGcv {
+.fhtXVs {
   border: 0px !important;
+}
 
+/* Search box icon */
+.jWrOPG {
+  color: var(--lavender) !important;
 }
 
 /* Modals */
@@ -428,24 +432,44 @@ div.CodeMirror-sizer {
   background-color: var(--background-color) !important;
 }
 
-.fdNGI:hover,
-.ecmWRF:hover,
-.kJAKXD:hover,
-.iTsWTZ:hover {
+/* Selected notebooks */
+.hssDCu,
+.jjanjz,
+.efuyhl {
+  background: var(--joplin-selected-color) !important;
+} 
+
+/* Notebook sidebar selector hover */
+.hssDCu:hover,
+.jjanjz:hover,
+.efuyhl:hover {
   background-color: var(--highlighted-color) !important;
 }
 
-div.sidebar .list-item:hover {
-  background-color: #ffffff00 !important;
+/* We also need this one for the 'Border' */
+.kTmxmP:hover,
+.jeERxN:hover,
+.fSmLkY:hover {
+  border-color: var(--highlighted-color) !important;
+}
+
+/* "Notebooks" and "Tags" Title label */
+.eAKTqK {
+  color: var(--lavender) !important;
+}
+
+/* Icons for above */
+.fYmytX {
+  color: var(--lavender) !important;
 }
 
 /* Notebook Titles */
-.hrpskW {
+.eFlvJZ {
   color: var(--lavender) !important;
 }
 
 /* Selected Notebook Text */
-.eroWlt {
+.kFvzzK {
   color: var(--lavender) !important;
 }
 
@@ -457,21 +481,22 @@ div.sidebar .list-item:hover {
 }
 
 /* Note title input */
-.title-input {
+.title-input,
+.note-title, #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div > div > div > div.note-title-wrapper > input {
   color: var(--lavender) !important;
 }
 
 
 
-/* Rich editor top bar transparent */
-.joplin-tinymce .tox .tox-toolbar__primary,
-.tox .tox-toolbar__primary, .tox .tox-toolbar__overflow,  .tox .tox-toolbar__group, .tox .tox-toolbar__group,
-.joplin-tinymce .tox-toolbar__group,
-#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(1),
-#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div:nth-child(2),
-#react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(3) > div > div.tox.tox-tinymce > div.tox-editor-container > div.tox-editor-header > div.tox-toolbar-overlord > div {
+/* Rich editor top bar colour */
+.joplin-tinymce .tox .tox-toolbar__primary {
   background-color: var(--background-color) !important;
-/*   background: var(--background-color) !important; */
+}
+
+/* Rich text icons */
+.tox .tox-tbtn, .tox .tox-tbtn svg, .tox .tox-menu button > svg, .tox .tox-split-button, .tox .tox-dialog__header, .tox .tox-button--icon .tox-icon svg, .tox .tox-button.tox-button--icon .tox-icon svg, .tox textarea, .tox input, .tox .tox-label, .tox .tox-toolbar-label {
+  color: var(--lavender) !important;
+  fill: var(--lavender) !important;
 }
 
 /* Rich text editor bar under background color */
@@ -505,52 +530,15 @@ div.sidebar .list-item:hover {
   border-color: var(--lavender) !important;
 }
 
-/* 
-/* Notebook sidebar color code with depth */
-/* Depth 1 */
-
-.fdNGI:hover {
-  background: var(--hover-color) !important;
-}
-
-/* Depth 2 */
-
-.ecmWRF:hover {
-  background: var(--hover-color) !important;
-}
-
-/* Depth 3 */
-
-.kJAKXD:hover {
-  background: var(--hover-color) !important;
-}
-
-/* All Notes */
-
-.dIykJs:hover {
-  background: var(--hover-color) !important;
-}
-
-.ljBnjS {
-  color: var(--lavender) !important;
-}
-
-.dtwrWP {
-  color: var(--lavender) !important;
-}
-
 /* Sidebar Expand Link */
 .sidebar-expand-link {
   color: var(--white) !important;
 }
 
-/* Selected notebooks */
-.edjcDi,
-.izrMvb,
-.eibLdd,
-.gXcbDC {
-  background: var(--joplin-selected-color) !important;
-} 
+/* Toolbar Icons */
+.toolbar-icon {
+  color: var(--lavender) !important;
+}
 
 /* Middle separator */
 #react-root > div.profile-default > div > div.resizableLayoutItem.rli-root > div.resizableLayoutItem.rli-editor > div.sc-cwHptR.DnUmE > div > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) {
